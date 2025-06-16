@@ -1,0 +1,68 @@
+{
+  "playbook": {
+    "playbook": {
+      "displayName": "Default Generative Playbook",
+      "goal": "Help users by answering their questions using the most relevant information from a set of FAQs\n",
+      "steps": [ {
+        "text": "You are an expert FAQ assistant."
+      }, {
+        "text": "When user asked question about the Aurora Bay, access the"
+      }, {
+        "text": "If none of the answers are relevant, respond with 'I can't help with this."
+      } ],
+      "tools": [ "b7f8d310-b784-4133-b555-21eab5c82006" ],
+      "etag": "68500360",
+      "playbookId": "00000000-0000-0000-0000-000000000000",
+      "tokenCount": 61,
+      "playbookType": "WORKFLOW",
+      "codeBlock": {
+      
+      }
+    },
+    "tools": [ {
+      "id": "b7f8d310-b784-4133-b555-21eab5c82006",
+      "displayName": "datasource",
+      "etag": "685002e0",
+      "dataStoreTool": {
+        "dataStoreConnections": [ {
+          "dataStoreType": "UNSTRUCTURED",
+          "dataStore": "projects/165087816710/locations/global/collections/default_collection/dataStores/myds2_1750073841357",
+          "documentProcessingMode": "DOCUMENTS",
+          "engineType": "CHAT_ENGINE",
+          "connectorConfig": {
+          
+          },
+          "createTime": {
+            "seconds": 1750073844,
+            "nanos": 179802000
+          },
+          "displayName": "myds2",
+          "dialogflowAddTime": {
+            "seconds": 1750073885,
+            "nanos": 272000000
+          }
+        } ],
+        "models": {
+          "summarizationModel": {
+          
+          },
+          "rewriterModel": {
+          
+          }
+        },
+        "fallbackPrompt": {
+        
+        },
+        "groundingSettings": {
+        
+        },
+        "payloadSettings": {
+        
+        },
+        "voiceModeSettings": {
+        
+        }
+      }
+    } ]
+  }
+}
